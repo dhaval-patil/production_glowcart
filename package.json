@@ -1,0 +1,37 @@
+{
+  "name": "glowcart",
+  "version": "1.0.0",
+  "description": "ECommerce Website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix ./client",
+    "dev": "concurrently \"npm run start\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "Dhaval Patil",
+  "license": "ISC",
+  "dependencies": {
+    "antd": "^5.21.1",
+    "bcrypt": "^5.1.1",
+    "braintree": "^3.26.0",
+    "caniuse-lite": "^1.0.30001690",
+    "colors": "^1.4.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-formidable": "^1.2.0",
+    "jsonwebtoken": "^9.0.2",
+    "moment": "^2.30.1",
+    "mongodb": "^6.12.0",
+    "mongoose": "^8.9.3",
+    "morgan": "^1.10.0",
+    "nodeman": "^1.1.2",
+    "slugify": "^1.6.6"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  }
+}
