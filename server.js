@@ -20,7 +20,10 @@ const __dirname = path.dirname(__filename);
 const app = express();
 
 // middlewares
-app.use(cors());
+app.use(cors({
+  origin: 'https://production-glowcart.onrender.com', // or '*'
+  credentials: true // if you're using cookies
+}));
 app.use(express.json());
 app.use(morgan("dev"));
 app.use(express.static(path.join(__dirname, "./client/build")));
